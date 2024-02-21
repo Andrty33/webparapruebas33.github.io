@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="estilos.css"> <!-- Puedes crear un archivo CSS separado para los estilos -->
+</head>
+
+<body>
+
+    <!-- Página 1 -->
+    <section id="pagina1">
+        <h1>Bienvenido a mi Página Web</h1>
+        <p>Esta es la primera hoja de la página web.</p>
+    </section>
+
+    <!-- Página 2 -->
+    <section id="pagina2">
+        <h2>Sobre Nosotros</h2>
+        <p>Información sobre nuestro sitio y equipo.</p>
+    </section>
+
+    <!-- Página 3 -->
+    <section id="pagina3">
+        <h2>Contacto</h2>
+        <p>Complete el formulario a continuación para ponerse en contacto con nosotros.</p>
+
+        <!-- Formulario -->
+        <form action="procesar_formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script> <!-- Puedes crear un archivo JavaScript separado para los scripts -->
+
+</body>
+
+</html>
